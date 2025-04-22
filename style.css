@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #ff3b30;
+  --dark-grey: #4a5468;
+  --low-dark-grey: #e2e7f0;
+  --big-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+  --sm-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
