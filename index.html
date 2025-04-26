@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-up">
+        <div class="header-up-icons">
+          <img src="./images/facebook.png" alt="Facebook" />
+          <img src="./images/twitter.png" alt="Twitter" />
+          <img src="./images/instargam.png" alt="Instagram" />
+        </div>
+        <div class="header-up-logo">
+          <img src="./images/logo (1).png" alt="Logo" />
+        </div>
+        <div class="header-down-container">
+          <div class="header-up-search">
+            <input type="text" placeholder="ძიება..." />
+            <img src="./images/search icon.png" alt="Search" />
+          </div>
+          <div class="search-icon">
+            <img src="./images/Search icon dark.png" alt="Search" />
+          </div>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="header-down">
+        <div class="nav-items">
+          <nav>
+            <ul>
+              <li><a href="#">პოლიტიკა</a></li>
+              <li><a href="#">საზოგადოება</a></li>
+              <li><a href="#">Covid-19</a></li>
+              <li><a href="#">სამართალი</a></li>
+              <li><a href="#">ბიზნესი & ეკონომიკა</a></li>
+              <li><a href="#">კრიმინალი</a></li>
+              <li><a href="#">შემთხვევა</a></li>
+              <li><a href="#">მსოფლიო</a></li>
+              <li class="dropdown">
+                <input type="checkbox" id="more-toggle" hidden />
+                <label for="more-toggle" class="more-btn"
+                  >მეტი
+                  <img src="./images/arrow down.png" alt="arrow" />
+                </label>
+                <ul class="dropdown-menu">
+                  <li><a href="#">სპორტი</a></li>
+                  <li><a href="#">რელიგია</a></li>
+                  <li><a href="#">ხელოვნება</a></li>
+                </ul>
+              </li>
+              <li class="hidden-items"><a href="#">სპორტი</a></li>
+              <li class="hidden-items"><a href="#">რელიგია</a></li>
+              <li class="hidden-items"><a href="#">ხელოვნება</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
