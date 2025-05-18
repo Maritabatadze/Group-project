@@ -1,58 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>სლაიდერი</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper Slider with Text Overlay</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-
-    <div class="container py-5 d-flex justify-content-center">
-      <div id="carouselExampleDark" class="carousel slide custom-carousel" data-bs-ride="carousel">
-        
-        <div class="carousel-inner">
-            <div class="carousel-inner position-relative">
-       
-                <div class="carousel-item active" data-bs-interval="4000">
-                  <img src="./photos/slider.png" class="d-block w-100" alt="Slide 1">
-                </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                  <img src="./photos/2.png" class="d-block w-100" alt="Slide 2">
-                </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                  <img src="./photos/3.png" class="d-block w-100" alt="Slide 3">
-                </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                  <img src="./photos/4.png" class="d-block w-100" alt="Slide 4">
-                </div>
-              
-                <div class="caption-wrapper">
-                  <p class="meta"><span class="highlight">პოლიტიკა</span> • 18.04.2022</p>
-                  <h5>ქვემო ქართლის რეგიონშ 20 მლნ ლარამდე ღირებულების სამელიორაციო ინფრასტრუქტურული პროექტები დაიწყება</h5>
-                </div>
-              </div>
-
-          <div class="caption-wrapper">
-            <p class="meta"><span class="highlight">პოლიტიკა</span> • 18.04.2022</p>
-            <h5>ქვეყნის რეგიონში 20 მლნ ლარამდე დირბილების სამემორაციო ინფრასტრუქტურული პროექტები დაიწყება</h5>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="./slider.png" alt="Nature" />
+          <div class="slide-text">
+            <p class="slider-headline">პოლიტიკა • 18.04.2022</p>
+            <p class="slidertext">
+              ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+              ინფრასტრუქტურული პროექტები დაიწყება
+            </p>
+            <p class="slidernav">&lt; 1/4 &gt;</p>
           </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">წინა</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">შემდეგი</span>
-        </button>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="2.png" alt="City" />
+          <div class="slide-text">
+            <p class="slider-headline">პოლიტიკა • 18.04.2022</p>
+            <p class="slidertext">
+              ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+              ინფრასტრუქტურული პროექტები დაიწყება
+            </p>
+            <p class="slidernav">&lt; 2/4 &gt;</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="3.png" alt="City" />
+          <div class="slide-text">
+            <p class="slider-headline">პოლიტიკა • 18.04.2022</p>
+            <p class="slidertext">
+              ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+              ინფრასტრუქტურული პროექტები დაიწყება
+            </p>
+            <p class="slidernav">&lt; 3/4 &gt;</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="4.png" alt="City" />
+          <div class="slide-text">
+            <p class="slider-headline">პოლიტიკა • 18.04.2022</p>
+            <p class="slidertext">
+              ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+              ინფრასტრუქტურული პროექტები დაიწყება
+            </p>
+            <p class="slidernav">&lt; 4/4 &gt;</p>
+          </div>
+        </div>
       </div>
+
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
-
-
